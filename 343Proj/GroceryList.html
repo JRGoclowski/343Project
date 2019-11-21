@@ -404,7 +404,7 @@ $(document).ready(function(){
           </div>
           <div class="col-sm-6">
             <a href="#addGroceryModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add to Grocery List</span></a>
-            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Remove from Grocery List</span></a>            
+            <a href="#deleteGroceryModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Remove from Grocery List</span></a>            
           </div>
                 </div>
             </div>
@@ -419,7 +419,7 @@ $(document).ready(function(){
             </th>
                         <th>Item</th>
                         <th>Amount</th>
-            <th>Category</th>
+                        <th>Category</th>
                         <th>User</th>
                         <th>Actions</th>
                     </tr>
@@ -438,7 +438,7 @@ $(document).ready(function(){
                         <td>item1user</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
                     <tr>
@@ -454,7 +454,7 @@ $(document).ready(function(){
                         <td>item2user</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
           <tr>
@@ -470,7 +470,7 @@ $(document).ready(function(){
                         <td>item3user</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
                     <tr>
@@ -486,7 +486,7 @@ $(document).ready(function(){
                         <td>item4user</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>         
           <tr>
@@ -502,7 +502,7 @@ $(document).ready(function(){
                         <td>item5user</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr> 
                 </tbody>
@@ -521,7 +521,7 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
-  <!-- Edit Modal HTML -->
+  <!-- Add Modal HTML -->
   <div id="addGroceryModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -592,7 +592,7 @@ $(document).ready(function(){
     </div>
   </div>
   <!-- Delete Modal HTML -->
-  <div id="deleteEmployeeModal" class="modal fade">
+  <div id="deleteGroceryModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
