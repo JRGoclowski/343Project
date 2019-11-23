@@ -489,13 +489,13 @@
                                       
                                         var myHTML = '';
                                         //test variable can be improved still
-                                        var testname = ["apple", "orange", "kimchi", "shrimp"]
-                                        var testamount = ["5", "2", "10", "69"]
-                                        var testcat = ["fruit", "fruit", "korean", "seafood"]
-                                        var testuser = ["RickyBobby", "Nardo", "jonthan", "colby"]
-                                        var testentry = [testname, testamount, testcat, testuser]
+                                        var testitem1 = ["apple", "5", "fruit", "rickybobby"]
+                                        var testitem2 = ["orange","2", "fruit", "nardo"]
+                                        var testitem3 = ["kimchi", "10", "korean", "jonthan"]
+                                        var testitem4 = ["shrimp", "69", "seafood", "collby"]
+                                        var testpantry = [testitem1, testitem2, testitem3, testitem4]
                                         for (var i = 0; i < 4; i++) {
-                                            myHTML += '<tr><td><span class="custom-checkbox"><input type="checkbox" id="checkbox'+(i+1)+'" name="options[]" value="1"><label for="checkbox'+(i+1)+'"></label></span></td><td>'+testentry[0][i]+'</td><td>'+testentry[1][i]+'</td><td>'+testentry[2][i]+'</td><td>'+testentry[3][i]+'</td><td><a href="#editGroceryModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td></tr>'
+                                            myHTML += '<tr><td><span class="custom-checkbox"><input type="checkbox" id="checkbox'+(i+1)+'" name="options[]" value="1"><label for="checkbox'+(i+1)+'"></label></span></td><td>'+testpantry[i][0]+'</td><td>'+testpantry[i][1]+'</td><td>'+testpantry[i][2]+'</td><td>'+testpantry[i][3]+'</td><td><a href="#editGroceryModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td></tr>'
                                         }
                                         wrapper.innerHTML = myHTML
                                 </script>
