@@ -482,95 +482,23 @@
                                 </thead>
 
                                 <!--Table Proper-->
-                                <tbody>
-                                    <!-- Item 1 Section -->
-                                    <tr>
-                                        <td>
-                                            <span class="custom-checkbox">
-                                                <input type="checkbox" id="checkbox1" name="options[]" value="1">
-                                                <label for="checkbox1"></label>
-                                            </span>
-                                        </td>
-                                        <td>Item1name</td>
-                                        <td>Item1amount</td>
-                                        <td>item1category</td>
-                                        <td>item1user</td>
-                                        <td>
-                                            <a href="#editGroceryModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                        </td>
-                                    </tr>
-                                    <!-- Item 2 Section -->
-                                    <tr>
-                                        <td>
-                                            <span class="custom-checkbox">
-                                                <input type="checkbox" id="checkbox2" name="options[]" value="1">
-                                                <label for="checkbox2"></label>
-                                            </span>
-                                        </td>
-                                        <td>Item2name</td>
-                                        <td>Item2amount</td>
-                                        <td>item2category</td>
-                                        <td>item2user</td>
-                                        <td>
-                                            <a href="#editGroceryModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                        </td>
-                                    </tr>
-                                    <!-- Item 3 Section -->
-                                    <tr>
-                                        <td>
-                                            <span class="custom-checkbox">
-                                                <input type="checkbox" id="checkbox3" name="options[]" value="1">
-                                                <label for="checkbox3"></label>
-                                            </span>
-                                        </td>
-                                        <td>Item3name</td>
-                                        <td>Item3amount</td>
-                                        <td>item3category</td>
-                                        <td>item3user</td>
-                                        <td>
-                                            <a href="#editGroceryModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                        </td>
-                                    </tr>
-                                    <!-- Item 4 Section -->
-                                    <tr>
-                                        <td>
-                                            <span class="custom-checkbox">
-                                                <input type="checkbox" id="checkbox4" name="options[]" value="1">
-                                                <label for="checkbox4"></label>
-                                            </span>
-                                        </td>
-                                        <td>Item4name</td>
-                                        <td>Item4amount</td>
-                                        <td>item4category</td>
-                                        <td>item4user</td>
-                                        <td>
-                                            <a href="#editGroceryModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                        </td>
-                                    </tr>
-                                    <!-- Item 6 Section -->
-                                    <tr>
-                                        <td>
-                                            <span class="custom-checkbox">
-                                                <input type="checkbox" id="checkbox5" name="options[]" value="1">
-                                                <label for="checkbox5"></label>
-                                            </span>
-                                        </td>
-                                        <td>Item5name</td>
-                                        <td>Item5amount</td>
-                                        <td>item5category</td>
-                                        <td>item5user</td>
-                                        <td>
-                                            <a href="#editGroceryModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                            <a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                        </td>
-                                    </tr>
-                                
+                                <tbody id="myHTMLWrapper">
                                 </tbody>
-                            
+                                <script>
+                                        var wrapper = document.getElementById("myHTMLWrapper");
+                                      
+                                        var myHTML = '';
+                                        //test variable can be improved still
+                                        var testname = ["apple", "orange", "kimchi", "shrimp"]
+                                        var testamount = ["5", "2", "10", "69"]
+                                        var testcat = ["fruit", "fruit", "korean", "seafood"]
+                                        var testuser = ["RickyBobby", "Nardo", "jonthan", "colby"]
+                                        var testentry = [testname, testamount, testcat, testuser]
+                                        for (var i = 0; i < 4; i++) {
+                                            myHTML += '<tr><td><span class="custom-checkbox"><input type="checkbox" id="checkbox'+(i+1)+'" name="options[]" value="1"><label for="checkbox'+(i+1)+'"></label></span></td><td>'+testentry[0][i]+'</td><td>'+testentry[1][i]+'</td><td>'+testentry[2][i]+'</td><td>'+testentry[3][i]+'</td><td><a href="#editGroceryModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a href="#deleteGroceryModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td></tr>'
+                                        }
+                                        wrapper.innerHTML = myHTML
+                                </script>
                             </table>
 
                             <!-- Page Selection Section-->
